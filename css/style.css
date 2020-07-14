@@ -2,7 +2,9 @@
 li {
   list-style: none;
 }
-
+.relative {
+  position: relative;
+}
 /* typo */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -80,7 +82,7 @@ HEADER
 }
 @media screen and (max-width: 767px) {
   #hero  {
-    height: 400px;
+    height: 450px;
   }
   h1 {
     font-size: 30px;
@@ -170,5 +172,95 @@ main
   }
   #how .side-text > .container > div:first-child {
     margin-top: 320px;
+  }
+}
+
+/* #impression */
+#impression {
+  text-align: center;
+}
+#impression > div {
+  padding: 20px;
+}
+#banner-scooter {
+  background-image: url(../img/banner-scooter.jpg);
+  background-position: 30%;
+  background-size: cover;
+  height: 500px;
+  color: #fff;
+}
+@media screen and (max-width: 767px) {
+  #banner-scooter {
+    background-position: 60%;
+  }
+}
+
+#banner-scooter > div {
+  height: 500px;
+}
+#banner-scooter .smart-mobility {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+}
+#banner-scooter .smart-mobility h2 {
+  font-size: 34px;
+}
+#banner-scooter .smart-mobility p {
+  font-size: 22px;
+  margin: 25px 0;
+}
+#banner-scooter .smart-mobility a {
+  font-size: 20px;
+  color: #fff;
+}
+
+#get-globe > div {
+  color: #fff;
+}
+#get-globe > div h2 {
+  padding: 50px 0 20px;
+  font-size: 36px;
+}
+#get-globe > div a {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 300;
+}
+#get-app {
+  position: relative;
+  padding-right: 20px;
+}
+#get-app img {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  width: 50%;
+  max-width: 300px;
+}
+#get-app > div {
+  background: linear-gradient(180deg, rgba(64,85,104,1) 0%, rgba(37,47,56,1) 100%);
+  height: 600px;
+}
+#find-us {
+  padding-left: 20px;
+}
+#find-us > div {
+  height: 600px;
+  background-image: url(../img/banner-city.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  #get-app,
+  #find-us {
+    padding: 0;
+  }
+  #find-us {
+    margin-top: 40px;
   }
 }
