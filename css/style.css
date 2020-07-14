@@ -1,9 +1,77 @@
 /* general */
-
+li {
+  list-style: none;
+}
 
 /* typo */
-
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+a {
+  text-decoration: none;
+}
 
 /*
 HEADER
  */
+#header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+  background-color: #fff;
+}
+#header-top .logo {
+  padding-left: 20px;
+  height: 15px;
+}
+#header-top > .container:first-child {
+  line-height: 80px;
+}
+#header-top ul {
+  text-align: right;
+}
+#header-top ul > li {
+  display: inline-block;
+  padding: 0 10px;
+}
+#header-top ul > li > a {
+  color: #000;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+#header-top .right-menu {
+  padding-right: 20px;
+}
+#header-top .right-menu li:first-child > a:first-child {
+  font-weight: 300;
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+  padding: 0 5px;
+}
+
+#header-top .btn {
+  color: #fff;
+  background-color: #000;
+  text-transform: capitalize;
+  padding: 5px 15px;
+}
+#header-top .hamburger-menu {
+  padding-right: 15px;
+}
+
+
+
+#hero {
+  margin-top: 75px;
+  height: 554px;
+  background-image: url(../img/hero-bg.jpg);
+  background-position: center;
+}
+
+@media screen and (max-width: 767px) {
+  #hero  {
+    height: 400px;
+  }
+}
